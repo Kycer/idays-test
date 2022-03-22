@@ -3,7 +3,9 @@ import 'package:get/get.dart';
 import 'package:idays/app.dart';
 import 'package:idays/config/theme.dart';
 
-void main() => runApp(const MyApp());
+void main() async {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'IDays 倒数日',
       debugShowCheckedModeBanner: false,
       theme: appTheme,
-      home: const RootPage(),
+      home: RootPage(),
     );
   }
 }

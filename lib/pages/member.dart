@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:idays/provider/current_index.dart';
+import 'package:idays/state/current_index.dart';
 
 class MemberPage extends StatefulWidget {
   const MemberPage({Key? key}) : super(key: key);
@@ -18,7 +18,6 @@ class _MemberPageState extends State<MemberPage> with AutomaticKeepAliveClientMi
   @override
   Widget build(BuildContext context) {
     var index = CurrentIndexController.to.index;
-    print(index);
     return Container(
         child: const Center(
           // child: new Text(wordPair.asPascalCase),
